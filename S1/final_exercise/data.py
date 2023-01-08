@@ -37,7 +37,7 @@ def mnist(batch_size:int=10):
 
     # Defina a Normalization term to deal with the corrupted data 
     # Mean 0.5 std 0.5 in first chanel
-    trans = transforms((0.5,), (0.5,))
+    trans = transforms.Normalize((0.5,), (0.5,))
 
     # Create a container that stores a collection of tensors in a single object.
     train_set = torch.utils.data.TensorDataset(trans(x_train), y_train)
