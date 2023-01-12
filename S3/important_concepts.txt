@@ -1,0 +1,16 @@
+The --no-cache-dir flag is used when running a command with pip, 
+the package installer for Python. When pip is used to install packages,
+it stores a copy of the package in a cache directory on the local machine 
+to speed up future installs. 
+The --no-cache-dir flag tells pip not to use the cache and instead to download 
+the package fresh from the internet.
+In the context of Docker, using --no-cache-dir is important because it ensures 
+that the packages are installed directly from the internet, rather than using a
+cached copy that may be out of date or have been altered. This is particularly
+important when building Docker images, because it ensures that the image always 
+contains the latest versions of the packages and that it is not affected by any 
+changes to the local cache.
+
+It is worth noting that this option is not exclusive for pip and docker, but any 
+tool or scenario where you want to ensure that a package that is being installed 
+is the latest version and not coming from a cache.

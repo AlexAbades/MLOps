@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: src
+Version: 0.1.0
+Summary: A quick start to cookiecutter structure for a CNN on MINST DataSet
+Author: Alex Abades
+License: MIT
+License-File: LICENSE
